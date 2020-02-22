@@ -35,8 +35,8 @@ pipeline {
 
         stage("Deploy") {
             steps {
-                sh "cd helloworld"
-                sh "/usr/local/bin/python  app.py"
+                sh "pwd"
+                sh "/usr/local/bin/python  helloworld/app.py"
                 
             }
             post {
